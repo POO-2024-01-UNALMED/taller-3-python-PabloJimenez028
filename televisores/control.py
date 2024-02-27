@@ -2,11 +2,12 @@ from televisores.tv import TV
 
 
 class Control:
-    def __init__(self, tv:TV):
-        self._tv = tv
+    def __init__(self):
+        self._tv = TV
 
     def enlazar(self, tv:TV):
         self._tv = tv
+        
     def turnOn(self):
         TV.turnOn
 

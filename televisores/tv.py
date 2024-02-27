@@ -5,18 +5,14 @@ class TV:
     
     numTV = 0
 
-    def __init__(self, marca:Marca, canal, precio, estado, volumen, control:Control):
-        self._marca = marca 
+    def __init__(self, marca:Marca, estado:bool):
+        self._marca = Marca
+        self._estado = bool
         self._canal = 1
         self._precio = 500
-        self._estado = estado
         self._volumen = 1
-        self._control = control
+        self._control = Control
         self.numTV += 1
-
-    def TV(self, marca:Marca, estado:bool):
-        self._marca = marca
-        self._estado = estado
 
     def setMarca(self, marca):
         self._marca = marca
