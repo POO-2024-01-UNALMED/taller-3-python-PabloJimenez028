@@ -9,8 +9,15 @@ class TV:
         self._precio = 500
         self._volumen = 1
         
-        self.numTV += 1
+        
 
+    @staticmethod
+    def setNumTV(numero):
+        numTV = numero
+        
+    @staticmethod
+    def getNumTV(numTV):
+        return numTV
 
     def setMarca(self, marca):
         self._marca = marca
@@ -28,7 +35,7 @@ class TV:
     def setPrecio(self, precio):
         self._precio = precio
 
-    def getPrecio(self, precio):
+    def getPrecio(self):
         return self._precio
     
     def setVolumen(self, volumen):
@@ -44,11 +51,7 @@ class TV:
     def getControl(self):
         return self._control
     
-    def setNumTV(self, numero):
-        self.numTV = numero
-
-    def getNumTV(self):
-        return self.numTV
+    
 
     def turnOn(self):
         self._estado = True
