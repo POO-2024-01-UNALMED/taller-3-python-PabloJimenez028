@@ -5,7 +5,7 @@ class Control:
 
     def enlazar(self, tv):
         self._tv = tv
-        TV.setControl = tv
+        TV.setControl = self._tv
 
     def setTv(self, tv):
         self._tv = tv
