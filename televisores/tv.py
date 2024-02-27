@@ -8,15 +8,15 @@ class TV:
         self._canal = 1
         self._precio = 500
         self._volumen = 1
-        
+        TV.numTV += 1
     
-    @staticmethod
-    def setNumTV(numero):
-        numTV = numero
+    @classmethod
+    def setNumTV(cls, numero):
+        TV.numTV = numero
 
-    @staticmethod
-    def getNumTV(numTV):
-        return numTV
+    @classmethod
+    def getNumTV(cls):
+        return TV.numTV
 
     def setMarca(self, marca):
         self._marca = marca
