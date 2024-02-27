@@ -28,10 +28,12 @@ class Control:
         self.tv.volumenDown()
 
     def setCanal(self, canal):
-        self.tv.setCanal(canal)
+        if canal >= 1 and canal <=120: 
+            self.tv.setCanal(canal)
 
     def setVolumen(self, volumen):
-        self.tv.setVolumen(volumen)
+        if volumen >= 0 and volumen <=7:
+            self.tv.setVolumen(volumen)
 
 
 
