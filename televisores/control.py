@@ -32,7 +32,7 @@ class Control:
         self.tv.setCanal(canal)
 
     def setVolumen(self, volumen):
-        self.tv.setVolumen()
+        self.tv.setVolumen(volumen)
 
 
 
