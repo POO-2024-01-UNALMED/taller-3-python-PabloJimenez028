@@ -8,13 +8,13 @@ class TV:
         self._canal = 1
         self._precio = 500
         self._volumen = 1
-        
+
         
 
     @staticmethod
     def setNumTV(numero):
         numTV = numero
-        
+
     @staticmethod
     def getNumTV(numTV):
         return numTV
@@ -26,7 +26,7 @@ class TV:
         return self._marca
     
     def setCanal(self, canal):
-        if canal >= 0 and canal <=120:
+        if canal >= 1 and canal <=120:
             self._canal = canal
 
     def getCanal(self):
@@ -39,7 +39,7 @@ class TV:
         return self._precio
     
     def setVolumen(self, volumen):
-        if volumen >= 0 and volumen <=120:    
+        if volumen >= 0 and volumen <=7:    
             self._volumen = volumen
 
     def getVolumen(self):
