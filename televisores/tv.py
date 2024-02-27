@@ -1,16 +1,15 @@
 class TV:
-    
+
     numTV = 0
 
-    def __init__(self, marca, estado:bool):
+    def __init__(self, marca, estado):
         self._marca = marca
-        self._estado = bool
+        self._estado = estado
         self._canal = 1
         self._precio = 500
         self._volumen = 1
-
         
-
+    
     @staticmethod
     def setNumTV(numero):
         numTV = numero
